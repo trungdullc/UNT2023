@@ -3,6 +3,7 @@
 [comment]: <> (Step 2: View .md, right click > Markdown Preview Enhanced)
 
 [comment]: <> (Comment goes here, no inline comments)
+[comment]: <> (Note: Limitations of GitHub README.md, no raw HTML, css, line issues)
 # H1
 ## H2
 ### H3
@@ -10,13 +11,14 @@
 ##### H5
 ###### H6
 
-**Fonts**
-*italic*
-**bold**
-***italic & bold***
-**~~Strikethru & bold~~**
+**Fonts**<br>
+*italic*<br>
+**bold**<br>
+***italic & bold***<br>
+**~~Strikethru & bold~~**<br>
 
-**Highlight**
+**Highlight** **~~(NOT SUPPORTED IN GITHUB)~~**
+
 "Highlight <span style="background-color:yellow">Pikachu</span>"
 
 [comment]: <> (Inline HTML, rarely used)
@@ -25,7 +27,7 @@
   <dd>Is something people use sometimes.</dd>
 
   <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dd>Does *not* work **very** well. Don't use HTML <em>tags</em>.</dd>
 </dl>
 
 [comment]: <> (Note: No text before list)
@@ -35,7 +37,7 @@
    * Unordered sub-list
       * Unordered sub-list
 3. Actual numbers don't matter, just that it's a number
-   1. Ordered sub-list
+  1. Ordered sub-list
 4. And another item
 
 [comment]: <> (Note: Need space after *)
@@ -45,15 +47,16 @@
 + Section 3
 
 **Checkbox**
-- [ ] unchecked checkbox
-&#9744; alt unchecked checkbox
-- [x] checked checkbox
-&#9745; alt checkbox
+- [ ] unchecked checkbox<br>
+   &#9744; alt unchecked checkbox<br>
+- [x] checked checkbox<br>
+   &#9745; alt checkbox
 
-**Emojis**
-:white_check_mark:
-:heavy_check_mark:
+**Emojis**<br>
+:white_check_mark:<br>
+:heavy_check_mark:<br>
 :heart_eyes:
+
 https://gist.github.com/rxaviers/7360908
 
 [comment]: <> (Create Codeblock w/ ` not ')
@@ -75,17 +78,19 @@ int main(){
 }
 ```
 
-**Blockquotes**
-> Blockquotes are handy in email to emulate reply text.
+**Blockquotes** (Double space at end for \n)
+> Blockquotes are handy in email to emulate reply text.  
 > "Trung was the best dealer ever" *by anonymous user*
+>> Tab Style
 
 **Quote break (need return)**
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you ***can*** *put* **Markdown** into a blockquote. 
 
-**Links**
+**Links**<br>
 [Du's Homepage](https://trungdullc.github.io/ "Howdy")
 
 [comment]: <> (: is alignment)
+
 **Tables**
 | Pokemon       | Element       | Cost  |
 | ------------- |:-------------:| -----:|
@@ -94,27 +99,33 @@ int main(){
 | Charizard     | Fire          | **$1337** |
 
 [comment]: <> (Add Images)
-**Image w/o link**
-![alt text](/images/aiPikachu.jfif "Pikachuuuu")
+**Image w/o link**<br>
+![alt text](/Markdown/images/aiPikachu.jfif "Pikachuuuu")
+
+**Image w/ link**
+[![Pokemon](https://cdn.pixabay.com/photo/2016/08/05/15/24/team-1572483_1280.jpg)](https://www.pokemon.com/)
 
 **Youtube Video**
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Youtube_shorts_icon.svg/724px-Youtube_shorts_icon.svg.png" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 [comment]: <> (Internal Codeblock, don't mix with html tags)
 Learn to `code` at [duprogramllc](https://trungdullc.github.io/)
 
 [comment]: <> (Add Horizontal Line)
+
 ***
 ---
 ___
 
+<!-- css not work on GitHub README.md -->
 <div style="background-color:rgba(0, 0, 0); text-align:center; vertical-align: middle; padding:40px 0;">
 <a href="https://trungdullc.github.io/">DONATE to Du</a>
-</div>
+</div><br>
+
 
 <!-- HTML code also works in markdown-->
-<br><center><font color = "red">WARNING: HACKER DETECTED</font></center><br>
+<!-- but not for GitHub README.md no raw HTML Tags <font><center> -->
 
-<center>&#169; 2023 Trung Du &copy;</center>
+&#169; 2023 Trung Du &copy;
